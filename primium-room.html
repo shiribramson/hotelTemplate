@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>מלון יסמין | Hotel Yasmin</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap cdn -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- Bootstrap cdn -->
+
+<!--bootsrap rtl-->
+<link href="css/bootstrap-rtl.css" rel="stylesheet" type="text/css">
+<!--bootsrap rtl-->
+
+<!--font awesome-->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<!--font awesome-->
+
+<!--google fonts-->
+<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Secular+One" rel="stylesheet">
+<!--google fonts-->
+
+<!--jquery cdn-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--jquery cdn-->
+
+<!--Javascript files-->
+<script type="text/javascript" src="js/script.js"></script>
+<!--Javascript files-->
+
+
+<!--css files-->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/rooms-inner.css">
+<!--css files-->
+
+
+<!--css animated-->
+<link href="css/cssAnimated/animate.css" rel="stylesheet" type="text/css" />
+<!--css animated-->
+
+<!--hover effects-type-1-->
+<!--<link href="css/btnHoverEffects/demo-page.css" rel="stylesheet" media="all">-->
+<link href="css/btnHoverEffects/hover.css" rel="stylesheet" media="all">
+<!--hover effects-type-1-->
+
+<!--hover effect-->
+<link rel="stylesheet" type="text/css" href="css/hoverEffects/set1.css" />
+<link rel="stylesheet" type="text/css" href="css/hoverEffects/set2.css" />
+<!--hover effect-->
+
+<!--nav animation on scroll-->
+<script>
+$(window).scroll(function () {
+	var $this = $(this);
+	$menuFixed = $('.header-top');
+	if ($this.scrollTop() > 150) {
+		$menuFixed.addClass('header-top-bg');
+	}else{
+		$menuFixed.removeClass('header-top-bg');
+	}
+});
+</script>
+<!--nav animation on scroll-->
+
+</head>
+<body id="myBody">
+<div class="container-fluid" id="main">
+<div class="row">
+<div id="page-wrap">
+<nav class="navbar navbar-default navbar-fixed-top header-top" role="navigation">
+<div class="container-fluid">
+	<div class="navbar-header">
+	<a href="#" class="js-nav-toggle nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>	
+		
+		<div class="navbar-brand visible-xs nav-mobile">
+		<a href="index.html">Hotel Yasmin</a>
+		</div>
+	</div>
+
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<ul class="nav navbar-nav"> 
+		<a href="index.html" class="navbar-brand hidden-xs">Hotel Yasmin</a>
+			<li><a href="#two">אודות</a></li>
+			<li><a href="#three">חדרים וסוויטות</a></li>
+			<li><a href="#four">קולינריה</a></li>
+			<li><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Sale</button></li>
+			<li><a href="#five">ספא וחדר כושר</a></li>
+			<li><a href="#six">שירותי המלון</a></li>
+			<li><a href="#contact">צור קשר</a></li>
+		</ul>
+		<div  class="hidden-xs hidden-sm" id="blurClick" style="font-size:30px;cursor:pointer; margin-top:-72px;" onclick="openNav(); overflowHidden();openNava();"><i class="fa fa-bars" aria-hidden="true"></i></div>
+	</div>
+</div>
+</nav> 
+
+<div id="myNav" class="overlay">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav(); overflowScroll();" id="removeBlur">&times;</a>
+<div class="overlay-content">
+<a href="#">על המלון</a>
+<a href="#">חדרים וסוויטות</a>
+<a href="#">קולינריה</a>
+<a href="#">ספא וכושר</a>
+<a href="#">מבצעים</a>
+<a href="#">יצירת קשר</a>
+</div>
+</div>  
+
+<div class="container fitst-container margin-top-150">
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item"><a href="index.html">דף הבית</a></li>
+  <li class="breadcrumb-item"><a href="#">גלריה</a></li>
+  <li class="breadcrumb-item"><a href="#">חדרים</a></li>
+  <li class="breadcrumb-item active">חדר פרימיום</li>
+</ol>
+<div class="demo-gallery">
+	<ul id="lightgallery" class="list-unstyled">
+	 	
+		<li class="col-xs-6 col-sm-4 col-md-3 padding-0" data-responsive="images/rooms-gallary/room-10.jpg 375, images/rooms-gallary/room-10.jpg 480, images/rooms-gallary/room-10.jpg 800" data-src="images/rooms-gallary/room-10.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+			<a href="">
+			  <div class="hover11 column">
+				<figure><img class="img-responsive" src="images/rooms-gallary/room-10.jpg"></figure>
+			</a>
+			</div>
+			
+		</li>
+		
+		<li class="col-xs-6 col-sm-4 col-md-3 padding-0" data-responsive="images/rooms-gallary/room-11.jpg 375, images/rooms-gallary/room-11.jpg 480, images/rooms-gallary/room-11.jpg 800" data-src="images/rooms-gallary/room-11.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+			<a href="">
+			  <div class="hover11 column">
+				<figure><img class="img-responsive" src="images/rooms-gallary/room-11.jpg"> </figure>
+			</a>
+			</div>
+		</li>
+		
+		 <li class="col-xs-6 col-sm-4 col-md-3 padding-0" data-responsive="images/rooms-gallary/room-14.jpg 375, images/rooms-gallary/room-14.jpg 480, images/rooms-gallary/room-14.jpg 800" data-src="images/rooms-gallary/room-14.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+			<a href="">
+			 <div class="hover11 column">
+			   <figure> <img class="img-responsive" src="images/rooms-gallary/room-14.jpg"> </figure>
+			</a>
+			</div>
+		</li>
+		
+		
+		 <li class="col-xs-6 col-sm-4 col-md-3 padding-0" data-responsive="images/rooms-gallary/room-15.jpg 375, images/rooms-gallary/room-15.jpg 480, images/rooms-gallary/room-15.jpg 800" data-src="images/rooms-gallary/room-15.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+			<a href="">
+			 <div class="hover11 column">
+			   <figure> <img class="img-responsive" src="images/rooms-gallary/room-15.jpg"> </figure>
+			</a>
+			</div>
+		</li>
+		
+	</ul>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#lightgallery').lightGallery();
+});
+
+</script>
+
+<!-- lightgallery JS -->
+<script src="js/lightgallary-js/lightgallery.js"></script>
+
+<!--lightgallery moduls-->
+<script src="js/lightgallary-js/lightgallery.js"></script>
+<script src="js/lightgallary-js/lg-autoplay.js"></script>
+<script src="js/lightgallary-js/lg-fullscreen.js"></script>
+<script src="js/lightgallary-js/lg-hash.js"></script>
+<script src="js/lightgallary-js/lg-pager.js"></script>
+<script src="js/lightgallary-js/lg-thumbnail.js"></script>
+
+<!-- lightgallery CSS -->
+<link rel="stylesheet" href="css/lightgallary-css/lightgallery.css">
+<link rel="stylesheet" href="css/lightgallary-css/lg-fb-comment-box.css">
+<link rel="stylesheet" href="css/lightgallary-css/lg-transitions.css">
+
+<!-- Call the plugin -->
+<script>
+lightGallery(document.getElementById('lightgallery'));
+</script>
+
+</div>
+
+<a href="#" class="scrollup"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
+
+<script>
+/*one page scrolling link*/
+$('a[href*="#"]')
+// Remove links that don't actually link to anything
+.not('[href="#"]')
+.not('[href="#0"]')
+.click(function(event) {
+// On-page links
+if (
+  location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+  && 
+  location.hostname == this.hostname
+) {
+  // Figure out element to scroll to
+  var target = $(this.hash);
+  target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+  // Does a scroll target exist?
+  if (target.length) {
+	// Only prevent default if animation is actually gonna happen
+	event.preventDefault();
+	$('html, body').animate({
+	  scrollTop: target.offset().top
+	}, 1000, function() {
+	  // Callback after animation
+	  // Must change focus!
+	  var $target = $(target);
+	  $target.focus();
+	  if ($target.is(":focus")) { // Checking if the target was focused
+		return false;
+	  } else {
+		$target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+		$target.focus(); // Set focus again
+	  };
+	});
+  }
+}
+});
+/*one page scrolling link*/
+</script>
+
+<!-- Modal -->
+<!--<div class="modal fade" id="myModal" role="dialog">-->
+<div class="modal modal-he fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal-dialog">
+
+  <!-- Modal content-->
+  <div class="modal-content">
+	<div class="modal-header">
+	  <button type="button" class="close" data-dismiss="modal">&times;</button>
+	  <h4 class="modal-title">מבצע למזמינים חדר במלון- תקף לשבוע בלבד</h4>
+	</div>
+	<div class="modal-body">
+	  <p>Some text in the modal.</p>
+	</div>
+	<div class="modal-footer">
+	  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	</div>
+  </div> 
+</div>
+</div>
+<!-- Modal -->
+
+<script>
+function openNav() {
+document.getElementById("myNav").style.width = "100%";
+//document.getElementById("main").style.marginRight = "40%";
+}
+
+
+function overflowHidden () {
+document.getElementById("myBody").style.overflowY = "hidden";
+}
+
+function closeNav() {
+document.getElementById("myNav").style.width = "0%";
+//document.getElementById("main").style.marginRight= "0";
+}
+
+function overflowScroll () {
+document.getElementById("myBody").style.overflowY = "scroll";
+}
+
+
+/***add class blue***/
+/*$(document).ready(function(){
+$("#blurClick").click(function(){
+	$(".imgBlur").addClass("hover07");
+});
+});
+/***add class blue***/
+
+/***remove class blue***/
+/*$(document).ready(function(){
+$("#removeBlur").click(function(){
+$("div").removeClass("hover07");
+});
+});*/
+/***remove class blue***/
+</script>
+</div>
+</div>
+</div>
+
+<!--<div class="visible-xs">
+<div class="row">
+<div class="col-md-12 col-xs-12 padding-0">
+<div class="icon-bar">
+  <a class="active" href="#"><i class="fa fa-home"></i></a> 
+  <a href="#"><i class="fa fa-search"></i></a> 
+  <a href="#"><i class="fa fa-envelope"></i></a> 
+  <a href="#"><i class="fa fa-globe"></i></a>
+  <a href="#"><i class="fa fa-trash"></i></a> 
+</div>
+</div>
+</div>
+</div>-->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
