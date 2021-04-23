@@ -205,10 +205,10 @@ img.phone-img{ height:427px; object-fit: cover;}
 /*.bgimg-1 img { height:500px!important;}*/
 .bgimg-1 { margin-top: -65px!important;}
 .section-1 { width:100%;}
- .modal-body {padding:10px; height:300px;}
+.modal-body {padding:10px; height:300px;}
 .navbar-collapse { background:white!important;}
 .navbar { height:50px!important;}
- .modal-dialog {width:auto;}
+.modal-dialog {width:auto;}
 .bgimg-1 { margin-top:0px;}
 .nav-mobile, .nav-mobile a {font-family: 'Courgette', cursive; color:#AFA278; text-decoration:none; font-size:1.5em; }
 .navbar-nav>li { margin: 0 auto; float:none; display:table; }
